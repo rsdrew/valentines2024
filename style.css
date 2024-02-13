@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    background-color: rgb(202, 141, 141);
+    color: whitesmoke;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+#name {
+    font-family: "Caveat";
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+#will-you-be-my {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+#valentine {
+    font-size: 7rem;
+    font-family: "Sacramento";
+    margin: 2rem;
+}
+
+#us {
+    height: 300px;
+    animation: shake 4s linear infinite;
+}
+
+.heart {
+    position: fixed;
+    font-size: 1.5rem;
+    top: -1vh;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+  }
+  
+  @keyframes fall {
+    from {
+       transform: translateY(0vh) translateX(-10vw); 
+    }
+    to {
+       transform: translateY(105vh) translateX(10vw); 
+    }
+  } 
+
+@keyframes shake {
+    0% {
+        transform: rotate(0);
+    }
+    33% {
+        transform: rotate(-20deg);
+    }
+    67% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+
+}
